@@ -189,6 +189,47 @@ If you haven't created your MongoDB Cluster follow part 1 - 4:
 
     7) Test your API and verify that your data is stored in your cluster.
 
+### Insomnia y MongoDB: 
+
+##### Estado inicio pruebas: 
+![](https://i.postimg.cc/LsGSf9XC/estado-inicial-Mong-DB.png)
+
+##### getall()
+![](https://i.postimg.cc/Bb0GYm22/insomian-mongodb-1.png)
+
+##### create()
+![](https://i.postimg.cc/kMQC6dds/insomian-mongodb-2.png)
+
+##### create()
+![](https://i.postimg.cc/4NwTPbyh/insomian-mongodb-3.png)
+
+##### Estado actualizado MongoDB:
+![](https://i.postimg.cc/9fw5c6pG/estado-inicial-Mong-DB-2.png)
+
+##### getall()
+![](https://i.postimg.cc/W3RRz5Wx/insomian-mongodb-4.png)
+
+##### findbyid()
+![](https://i.postimg.cc/TwnzDnB1/insomian-mongodb-5.png)
+
+##### update()
+![](https://i.postimg.cc/3NBzLY8H/insomian-mongodb-6.png)
+
+##### Estado actualizado MongoDB:
+![](https://i.postimg.cc/h41F4b93/estado-inicial-Mong-DB-3.png)
+
+##### getall()
+![](https://i.postimg.cc/BQSrjLpZ/insomian-mongodb-7.png)
+
+##### delete()
+![](https://i.postimg.cc/dVDg9bgz/insomian-mongodb-8.png)
+
+##### Estado actualizado MongoDB:
+![](https://i.postimg.cc/ydC5skWH/estado-inicial-Mong-DB-4.png)
+
+##### getall()
+![](https://i.postimg.cc/wv5rvgss/insomian-mongodb-9.png)
+
 
 ##### Estructure: 
 
