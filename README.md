@@ -98,6 +98,98 @@ If you haven't created your MongoDB Cluster follow part 1 - 4:
 ![](https://i.postimg.cc/FRymmbKN/ipallowance-4.png)
 
 
+#### Part 3: Implementing the MongoDB Service
+
+    1) Create a new package called repository.
+
+    2) Modify your current User class to use MongoDB notations:
+
+      import org.springframework.data.annotation.Id;
+      import org.springframework.data.mongodb.core.index.Indexed;
+      import org.springframework.data.mongodb.core.mapping.Document;
+      
+      import java.util.Date;
+      
+      @Document
+      public class User
+      {
+         @Id
+         String id;
+      
+         String name;
+      
+         @Indexed( unique = true )
+         String email;
+      
+         String lastName;
+      
+         Date createdAt;
+      
+         public User()
+         {
+         }
+      }
+
+    3) Create a new interface called UserRepository inside the repository package:
+
+      import org.springframework.data.mongodb.repository.MongoRepository;
+      
+      public interface UserRepository extends MongoRepository<User, String>
+      {}
+
+    4) Create a new UserService implementation called UserServiceMongoDB and inject inside the UserRepository:
+
+       import java.util.List;
+       
+       public class UserServiceMongoDB
+       implements UserService
+       {
+       
+           private final UserRepository userRepository;
+       
+           public UserServiceMongoDB(@Autowired UserRepository userRepository )
+           {
+               this.userRepository = userRepository;
+           }
+       
+           @Override
+           public User create( User user )
+           {
+               return null;
+           }
+       
+           @Override
+           public User findById( String id )
+           {
+               return null;
+           }
+       
+           @Override
+           public List<User> all()
+           {
+               return null;
+           }
+       
+           @Override
+           public boolean deleteById( String id )
+           {
+               return false;
+           }
+       
+           @Override
+           public UserDto update( User user, String id )
+           {
+               return null;
+           }
+       }
+
+    5) Implement the methods of the UserServiceMongoDB using the UserRepository.
+
+    6) Remove the @Service annotation from the UserServiceHashMap and add it to the UserServiceMongoDB.
+
+    7) Test your API and verify that your data is stored in your cluster.
+
+
 ##### Estructure: 
 
 ![]()

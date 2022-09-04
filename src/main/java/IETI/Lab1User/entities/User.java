@@ -1,18 +1,24 @@
 package IETI.Lab1User.entities;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.Indexed;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.time.LocalDate;
 
+@Document
 public class User{
-    private String id;
-    private String name;
-    private String email;
-    private String lastName;
-    private String createdAt;
+    @Id
+    String id;
+    String name;
+    @Indexed(unique = true)
+    String email;
+    String lastName;
+    String createdAt;
 
     public User(){
-        this.id = String.valueOf((int)(Math.random()*9));
+        this.id = String.valueOf((int)(Math.random()*5));
         this.createdAt = LocalDate.now().toString();
-
     }
 
     public User(String name, String email, String lastName){

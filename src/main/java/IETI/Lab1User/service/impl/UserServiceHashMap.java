@@ -1,6 +1,7 @@
-package IETI.Lab1User.service;
+package IETI.Lab1User.service.impl;
 
 import IETI.Lab1User.entities.User;
+import IETI.Lab1User.service.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -8,8 +9,8 @@ import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 
-@Service
-public class UserServiceHashMap implements UserService{
+//@Service
+public class UserServiceHashMap implements UserService {
 
     private final ConcurrentHashMap<String, User> users = new ConcurrentHashMap<>();
 
