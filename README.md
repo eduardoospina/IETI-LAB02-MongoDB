@@ -54,7 +54,7 @@ If you haven't created your MongoDB Cluster follow part 1 - 4:
 
     4) Choose the Java driver, select the latest version and copy the connection string:
 
-	![](https://i.postimg.cc/264hnt0v/conexion-Mongodb.png)
+![](https://i.postimg.cc/264hnt0v/conexion-Mongodb.png)
 
     5) Replace the password on the connection string with the password used when creating your database user.
 
@@ -62,11 +62,11 @@ If you haven't created your MongoDB Cluster follow part 1 - 4:
 
     		spring.data.mongodb.uri=${MONGODB_URI}
 
-	![](https://i.postimg.cc/wBNmdP8P/aplication-property-mongodb.png)
+![](https://i.postimg.cc/wBNmdP8P/aplication-property-mongodb.png)
 
     7) Add the environment variable to IntelliJ Idea by editing the Run/Debug Configurations:
 
-	![](https://i.postimg.cc/j2cfF70S/variableambiente-mongofb-conection.png)
+![](https://i.postimg.cc/j2cfF70S/variableambiente-mongofb-conection.png)
 
     8) Add the Spring Boot starter data MongoDB dependency to your build.gradle:
 
@@ -78,11 +78,14 @@ If you haven't created your MongoDB Cluster follow part 1 - 4:
 
     9) Run your project and verify that the connection is successful.
 
-	![](https://i.postimg.cc/bNYk23kD/conexionmongodb-correcta.png)
+![](https://i.postimg.cc/bNYk23kD/conexionmongodb-correcta.png)
 
     10) To avoid future problems connecting to your Atlas instance (because of ip whitelist) find the way to allow connections from any Ip (not recommended for real-world applications)
 		
-	![]()
+![](https://i.postimg.cc/GmtcYsXx/ipallowance-1.png)
+![](https://i.postimg.cc/nhWn1c5b/ipallowance-2.png)
+![](https://i.postimg.cc/N0rBCvqy/ipallowance-3.png)
+![](https://i.postimg.cc/FRymmbKN/ipallowance-4.png)
 
 
 ##### Estructure: 
