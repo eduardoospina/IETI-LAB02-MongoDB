@@ -5,6 +5,7 @@ import IETI.Lab1User.service.UserService;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -48,5 +49,15 @@ public class UserServiceHashMap implements UserService {
     @Override
     public User update(User user, String userId) {
         return users.put(userId, user);
+    }
+
+    @Override
+    public List<User> findUsersWithNameOrLastNameLike(String queryText) {
+        return null;
+    }
+
+    @Override
+    public List<User> findUsersCreatedAfter(Date startDate) {
+        return null;
     }
 }

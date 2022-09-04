@@ -81,5 +81,19 @@ public class UserController {
             return new ResponseEntity<>(false,HttpStatus.FORBIDDEN);
         }
     }
+
+    @GetMapping("/Name/{textfind}")
+    ResponseEntity<List<UserDto>> findUsersWithNameOrLastNameLike(@PathVariable String textfind) {
+        try {
+            List<User> usuarios = userService.findUsersWithNameOrLastNameLike(textfind);
+            List<UserDto> listausuariosDTO = new ArrayList<>();
+            for (int i = 0; i< usuarios.size(); i++){
+                listausuariosDTO.add(mapeo.map(usuarios.get(i), UserDto.class));
+            }
+            return new ResponseEntity<>(listausuariosDTO, HttpStatus.ACCEPTED);
+        } catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+        }
+    }
 }
 

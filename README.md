@@ -230,42 +230,42 @@ If you haven't created your MongoDB Cluster follow part 1 - 4:
 ##### getall()
 ![](https://i.postimg.cc/wv5rvgss/insomian-mongodb-9.png)
 
+#### Challenge Yourself: Implement complex queries using the Spring Data Query Methods
 
-##### Estructure: 
+    1) Modify the UserService interface adding the following methods:
 
-![]()
+        List<User> findUsersWithNameOrLastNameLike(String queryText);
+        
+        List<User> findUsersCreatedAfter(Date startDate);
+      {}
 
+    2) Add those 2 new mapping methods on the controller.
 
-
+    3) Test your API, verify that queries work.
 
 ### Insomnia: 
 
+![](https://i.postimg.cc/y6h5CwtS/nameandlastname-like-1.png)
 
-##### getall()
-![]()
+![](https://i.postimg.cc/282KVnzk/nameandlastname-like-2.png)
 
-##### create()
-![]()
-##### create()
-![]()
 
-##### getall()
+
 ![]()
 
-##### findbyid()
 ![]()
 
-##### update()
-![]()
+Tip: take a look at the official documentation and learn how to create custom queries with Spring Data
 
-##### getall()
-![]()
 
-##### delete()
-![]()
 
-##### getall()
-![]()
+### Estructure: 
+
+![](https://i.postimg.cc/T1cHjDgc/estructura-Mongo-DB-lab02.png)
+
+
+
+
 
 
 
