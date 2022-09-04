@@ -85,12 +85,16 @@ If you haven't created your MongoDB Cluster follow part 1 - 4:
 
     10) To avoid future problems connecting to your Atlas instance (because of ip whitelist) find the way to allow connections from any Ip (not recommended for real-world applications)
 		
+		1.
 ![](https://i.postimg.cc/GmtcYsXx/ipallowance-1.png)
 
+		2.
 ![](https://i.postimg.cc/nhWn1c5b/ipallowance-2.png)
 
+		3.
 ![](https://i.postimg.cc/N0rBCvqy/ipallowance-3.png)
 
+		4.
 ![](https://i.postimg.cc/FRymmbKN/ipallowance-4.png)
 
 
