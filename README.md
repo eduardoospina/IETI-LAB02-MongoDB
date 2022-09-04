@@ -251,9 +251,9 @@ If you haven't created your MongoDB Cluster follow part 1 - 4:
 
 
 
-![]()
+![](https://i.postimg.cc/Dwt03J46/craetedat-1.png)
 
-![]()
+![](https://i.postimg.cc/4d1xcWL2/craetedat-3.png)
 
 Tip: take a look at the official documentation and learn how to create custom queries with Spring Data
 

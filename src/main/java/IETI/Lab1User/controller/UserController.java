@@ -91,7 +91,23 @@ public class UserController {
                 listausuariosDTO.add(mapeo.map(usuarios.get(i), UserDto.class));
             }
             return new ResponseEntity<>(listausuariosDTO, HttpStatus.ACCEPTED);
-        } catch (Exception e) {
+        }
+        catch (Exception e) {
+            return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+        }
+    }
+
+    @GetMapping("/creado/{createdAt}")
+    public ResponseEntity<List<UserDto>> findUsersCreatedAfter(@PathVariable String createdAt){
+        try {
+            List<User> usuarios = userService.findUsersCreatedAfter(createdAt);
+            List<UserDto> listausuariosDTOd = new ArrayList<>();
+            for (int i = 0; i< usuarios.size(); i++){
+                listausuariosDTOd.add(mapeo.map(usuarios.get(i), UserDto.class));
+            }
+            return new ResponseEntity<>(listausuariosDTOd, HttpStatus.ACCEPTED);
+        }
+        catch (Exception e) {
             return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
         }
     }

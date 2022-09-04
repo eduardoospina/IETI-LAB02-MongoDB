@@ -18,5 +18,5 @@ public interface UserService
 
     List<User> findUsersWithNameOrLastNameLike(String textofind);
 
-    List<User> findUsersCreatedAfter(Date startDate);
+    List<User> findUsersCreatedAfter(String CreatedAt);
 }
