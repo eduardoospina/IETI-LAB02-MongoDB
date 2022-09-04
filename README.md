@@ -62,9 +62,12 @@ If you haven't created your MongoDB Cluster follow part 1 - 4:
 
     		spring.data.mongodb.uri=${MONGODB_URI}
 
+
 ![](https://i.postimg.cc/wBNmdP8P/aplication-property-mongodb.png)
 
+
     7) Add the environment variable to IntelliJ Idea by editing the Run/Debug Configurations:
+
 
 ![](https://i.postimg.cc/j2cfF70S/variableambiente-mongofb-conection.png)
 
@@ -83,8 +86,11 @@ If you haven't created your MongoDB Cluster follow part 1 - 4:
     10) To avoid future problems connecting to your Atlas instance (because of ip whitelist) find the way to allow connections from any Ip (not recommended for real-world applications)
 		
 ![](https://i.postimg.cc/GmtcYsXx/ipallowance-1.png)
+
 ![](https://i.postimg.cc/nhWn1c5b/ipallowance-2.png)
+
 ![](https://i.postimg.cc/N0rBCvqy/ipallowance-3.png)
+
 ![](https://i.postimg.cc/FRymmbKN/ipallowance-4.png)
 
 
